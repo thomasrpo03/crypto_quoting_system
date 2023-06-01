@@ -1,8 +1,8 @@
-## CryptoQuote - Cryptocurrency Quoting Web Application
+# CryptoQuote - Cryptocurrency Quoting Web Application
 
 CryptoQuote is a dynamic web application built with React that enables users to obtain real-time cryptocurrency quotes. The application connects to the CryptoCompare API to fetch and display up-to-date pricing information for various cryptocurrencies in multiple fiat currencies, including the United States Dollar (USD), British Pound (GBP), Colombian Peso (COP), and Euro (EUR).
 
-# Features:
+## Features:
 
 1. Real-time Cryptocurrency Quotes: Users can easily retrieve current price data for a wide range of cryptocurrencies, providing them with accurate and up-to-date information.
 2. Multi-Fiat Currency Support: The web application offers support for various fiat currencies, allowing users to view cryptocurrency quotes in USD, GBP, COP, and EUR, catering to users from different regions.
