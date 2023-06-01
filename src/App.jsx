@@ -4,11 +4,15 @@ import CryptoLogo from "./assets/img/imagen-criptos.png";
 import Form from "./components/Form/Form";
 import Quote from "./components/Quote/Quote";
 import LoadingSpinner from "./components/LoadingSpinner/LoadingSpinner";
+import Footer from "./components/Footer/Footer";
 
 const Container = styled.div`
   max-width: 900px;
   margin: 0 auto;
+  padding: 0 auto;
   width: 90%;
+  height: 100vh;
+  max-height: 892px;
   @media (min-width: 992px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -64,15 +68,18 @@ function App() {
   }, [currencies]);
 
   return (
-    <Container>
-      <Image src={CryptoLogo} alt="Crypto Logo" />
-      <div>
-        <Heading>Quotes crypto currencies instantly</Heading>
-        <Form setCurrencies={setCurrencies} />
-        {loading && <LoadingSpinner />}
-        {quote.PRICE && <Quote quote={quote} />}
-      </div>
-    </Container>
+    <>
+      <Container>
+        <Image src={CryptoLogo} alt="Crypto Logo" />
+        <div>
+          <Heading>Quotes crypto currencies instantly</Heading>
+          <Form setCurrencies={setCurrencies} />
+          {loading && <LoadingSpinner />}
+          {quote.PRICE && <Quote quote={quote} />}
+        </div>
+      </Container>
+      <Footer />
+    </>
   );
 }
 
